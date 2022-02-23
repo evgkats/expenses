@@ -23,6 +23,11 @@
   <body>
     <%= render 'home/header' %>
     <div class="container">
+
+        <% if notice %>
+            <%= render 'layouts/alerts' %>
+        <% end %>
+
         <%= yield %>
     </div>
 
