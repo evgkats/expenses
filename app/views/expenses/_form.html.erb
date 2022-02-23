@@ -11,22 +11,19 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
+  <div class="mb-3 mt-3">
+    <%= form.text_field :description, class:"form-label", placeholder:"Description" %>
+  </div>
+
+  <div class="mb-3 mt-3">
+    <%= form.date_field :spent_on, class:"form-label", placeholder:"Spent On" %>
+  </div>
+
+  <div class="mb-3 mt-3">
+    <%= form.text_field :amount, class:"form-label", placeholder:"Amount"  %>
   </div>
 
   <div>
-    <%= form.label :spent_on, style: "display: block" %>
-    <%= form.date_field :spent_on %>
-  </div>
-
-  <div>
-    <%= form.label :amount, style: "display: block" %>
-    <%= form.text_field :amount %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-primary" %>
   </div>
 <% end %>

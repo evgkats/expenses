@@ -1,17 +1,8 @@
-<div id="<%= dom_id expense %>">
-  <p>
-    <strong>Description:</strong>
-    <%= expense.description %>
-  </p>
-
-  <p>
-    <strong>Spent on:</strong>
-    <%= expense.spent_on %>
-  </p>
-
-  <p>
-    <strong>Amount:</strong>
-    <%= expense.amount %>
-  </p>
-
-</div>
+<tr>
+  <th scope="row"><%= dom_id expense %></th>
+  <td><%= expense.description %></td>
+  <td><%= expense.spent_on %></td>
+  <td><%= expense.amount %></td>
+  <td><%= link_to "Show", expense %></td>
+  <td><%= link_to "Edit", edit_expense_path(expense) %></td>
+</tr>
