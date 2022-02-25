@@ -2,6 +2,7 @@
   <p class="lead"><b>Description:</b> <%= @expense.description %></p>
   <p class="lead"><b>Date:</b> <%= @expense.spent_on %></p>
   <p class="lead"><b>Amount:</b> <%= @expense.amount %></p>
+  <p class="lead"><b>User id:</b> <%= @expense.user.email %></p>
   <hr class="my-4">
   <div class="d-flex justify-content-end">
       <%= link_to "Edit this expense", edit_expense_path(@expense), class:"btn btn-primary btn-lg me-2" %>
