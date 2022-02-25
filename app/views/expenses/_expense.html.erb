@@ -3,6 +3,12 @@
   <td><%= expense.description %></td>
   <td><%= expense.spent_on %></td>
   <td><%= expense.amount %></td>
+  <td><%= expense.user.email %></td>
+  <% if expense.user == current_user %>
   <td><%= link_to "Show", expense %></td>
   <td><%= link_to "Edit", edit_expense_path(expense) %></td>
+  <% else %>
+  <td></td>
+  <td></td>
+  <% end %>
 </tr>
