@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple CRUD app to log expenses made using Ruby On Rails
 
-Things you may want to cover:
+Ruby rails version: Rails 7.0.2.2
 
-* Ruby version
+Database: SQLite
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To run locally, clone and run command: `rails s`
